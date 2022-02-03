@@ -2,13 +2,12 @@ package systemdesignstudy.dev.fernandocarvalho.systemdesignstudy.order.business
 
 import systemdesignstudy.dev.fernandocarvalho.systemdesignstudy.order.contracts.Order
 
-class OrderListenerImpl(
+class OrderFinderImpl(
     private val orderRepository: OrderRepository
-) : OrderListener {
+) : OrderFinder {
 
-    override fun onNewOrder(order: Order) {
-        println("Received a new order $order")
-        orderRepository.save(order)
+    override fun findAll(): List<Order> {
+        return orderRepository.findAll()
     }
 
 }
