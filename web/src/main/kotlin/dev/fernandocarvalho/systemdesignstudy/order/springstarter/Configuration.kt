@@ -1,12 +1,12 @@
-package systemdesignstudy.springstarter
+package dev.fernandocarvalho.systemdesignstudy.order.springstarter
 
+import dev.fernandocarvalho.systemdesignstudy.order.business.*
+import dev.fernandocarvalho.systemdesignstudy.order.contracts.Order
+import dev.fernandocarvalho.systemdesignstudy.order.springstarter.components.KafkaSender
+import dev.fernandocarvalho.systemdesignstudy.order.springstarter.database.OrderRepositoryImpl
+import dev.fernandocarvalho.systemdesignstudy.order.springstarter.database.SpringOrderRepository
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
-import systemdesignstudy.dev.fernandocarvalho.systemdesignstudy.order.business.*
-import systemdesignstudy.dev.fernandocarvalho.systemdesignstudy.order.contracts.Order
-import systemdesignstudy.springstarter.components.KafkaSender
-import systemdesignstudy.springstarter.database.OrderRepositoryImpl
-import systemdesignstudy.springstarter.database.SpringOrderRepository
 
 @Configuration
 class OrderConfiguration {

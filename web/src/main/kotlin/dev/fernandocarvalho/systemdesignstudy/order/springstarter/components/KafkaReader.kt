@@ -1,14 +1,14 @@
-package systemdesignstudy.springstarter.components
+package dev.fernandocarvalho.systemdesignstudy.order.springstarter.components
 
 import dev.fernandocarvalho.systemdesignstudy.infra.kafka.model.Message
+import dev.fernandocarvalho.systemdesignstudy.order.business.OrderDispatcher
+import dev.fernandocarvalho.systemdesignstudy.order.business.OrderListener
+import dev.fernandocarvalho.systemdesignstudy.order.contracts.Order
 import org.springframework.kafka.annotation.KafkaListener
 import org.springframework.kafka.support.KafkaHeaders
 import org.springframework.messaging.handler.annotation.Header
 import org.springframework.messaging.handler.annotation.Payload
 import org.springframework.stereotype.Component
-import systemdesignstudy.dev.fernandocarvalho.systemdesignstudy.order.business.OrderDispatcher
-import systemdesignstudy.dev.fernandocarvalho.systemdesignstudy.order.business.OrderListener
-import systemdesignstudy.dev.fernandocarvalho.systemdesignstudy.order.contracts.Order
 
 @Component
 class KafkaReader(

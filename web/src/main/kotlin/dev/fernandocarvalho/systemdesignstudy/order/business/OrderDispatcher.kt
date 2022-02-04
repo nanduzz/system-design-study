@@ -1,7 +1,7 @@
-package systemdesignstudy.dev.fernandocarvalho.systemdesignstudy.order.business
+package dev.fernandocarvalho.systemdesignstudy.order.business
 
-import systemdesignstudy.dev.fernandocarvalho.systemdesignstudy.order.MessageSender
-import systemdesignstudy.dev.fernandocarvalho.systemdesignstudy.order.contracts.Order
+import dev.fernandocarvalho.systemdesignstudy.order.MessageSender
+import dev.fernandocarvalho.systemdesignstudy.order.contracts.Order
 import java.util.*
 
 class OrderDispatcher(

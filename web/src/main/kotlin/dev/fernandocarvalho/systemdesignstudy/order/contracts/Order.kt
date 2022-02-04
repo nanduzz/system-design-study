@@ -1,4 +1,4 @@
-package systemdesignstudy.dev.fernandocarvalho.systemdesignstudy.order.contracts
+package dev.fernandocarvalho.systemdesignstudy.order.contracts
 
 import java.util.*
 

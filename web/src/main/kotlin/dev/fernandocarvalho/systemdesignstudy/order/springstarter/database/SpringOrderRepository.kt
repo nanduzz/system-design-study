@@ -1,4 +1,4 @@
-package systemdesignstudy.springstarter.database
+package dev.fernandocarvalho.systemdesignstudy.order.springstarter.database
 
 import org.springframework.data.mongodb.repository.MongoRepository
 import org.springframework.stereotype.Repository

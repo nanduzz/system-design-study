@@ -1,9 +1,9 @@
-package systemdesignstudy.springstarter.database
+package dev.fernandocarvalho.systemdesignstudy.order.springstarter.database
 
+import dev.fernandocarvalho.systemdesignstudy.order.contracts.Order
 import org.springframework.data.mongodb.core.mapping.Document
-import systemdesignstudy.dev.fernandocarvalho.systemdesignstudy.order.contracts.Order
 
-@Document("order")
+@Document("dev/fernandocarvalho/systemdesignstudy/order")
 data class OrderDocument(
     val id: String,
     val name: String,

@@ -1,10 +1,10 @@
-package systemdesignstudy.springstarter.components
+package dev.fernandocarvalho.systemdesignstudy.order.springstarter.components
 
 import dev.fernandocarvalho.systemdesignstudy.infra.kafka.model.CorrelationId
 import dev.fernandocarvalho.systemdesignstudy.infra.kafka.model.Message
 import org.springframework.kafka.core.KafkaTemplate
 import org.springframework.stereotype.Component
-import systemdesignstudy.dev.fernandocarvalho.systemdesignstudy.order.MessageSender
+import dev.fernandocarvalho.systemdesignstudy.order.MessageSender
 
 @Component
 class KafkaSender<V>(

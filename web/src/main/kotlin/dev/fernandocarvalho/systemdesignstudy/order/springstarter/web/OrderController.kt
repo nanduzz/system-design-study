@@ -1,13 +1,13 @@
-package systemdesignstudy.springstarter.web
+package dev.fernandocarvalho.systemdesignstudy.order.springstarter.web
 
+import dev.fernandocarvalho.systemdesignstudy.order.business.OrderDispatcher
+import dev.fernandocarvalho.systemdesignstudy.order.business.OrderFinder
+import dev.fernandocarvalho.systemdesignstudy.order.contracts.Order
 import org.springframework.http.ResponseEntity
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestMapping
-import systemdesignstudy.dev.fernandocarvalho.systemdesignstudy.order.business.OrderDispatcher
-import systemdesignstudy.dev.fernandocarvalho.systemdesignstudy.order.business.OrderFinder
-import systemdesignstudy.dev.fernandocarvalho.systemdesignstudy.order.contracts.Order
 
 @Controller
 @RequestMapping("/api/v1/order")

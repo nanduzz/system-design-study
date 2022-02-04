@@ -1,6 +1,6 @@
-package systemdesignstudy.dev.fernandocarvalho.systemdesignstudy.order.business
+package dev.fernandocarvalho.systemdesignstudy.order.business
 
-import systemdesignstudy.dev.fernandocarvalho.systemdesignstudy.order.contracts.Order
+import dev.fernandocarvalho.systemdesignstudy.order.contracts.Order
 
 class OrderFinderImpl(
     private val orderRepository: OrderRepository

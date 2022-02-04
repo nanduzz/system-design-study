@@ -1,7 +1,7 @@
-package systemdesignstudy.springstarter.database
+package dev.fernandocarvalho.systemdesignstudy.order.springstarter.database
 
-import systemdesignstudy.dev.fernandocarvalho.systemdesignstudy.order.business.OrderRepository
-import systemdesignstudy.dev.fernandocarvalho.systemdesignstudy.order.contracts.Order
+import dev.fernandocarvalho.systemdesignstudy.order.business.OrderRepository
+import dev.fernandocarvalho.systemdesignstudy.order.contracts.Order
 
 class OrderRepositoryImpl(
     private val repository: SpringOrderRepository
