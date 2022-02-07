@@ -1,4 +1,4 @@
-package dev.fernandocarvalho.systemdesignstudy.infra.kafka.consumer
+package dev.fernandocarvalho.systemdesignstudy.infra.kafka
 
 import dev.fernandocarvalho.systemdesignstudy.infra.kafka.model.Message
 import org.apache.kafka.clients.admin.NewTopic

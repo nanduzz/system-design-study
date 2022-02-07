@@ -6,3 +6,5 @@ spring:
     mongodb:
       uri: mongodb://root:example@127.0.0.1:27017/system-design-study?authSource=admin
       database: system-design-study
+  redis:
+    password: Redis2019!

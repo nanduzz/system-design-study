@@ -1,4 +1,4 @@
-package dev.fernandocarvalho.systemdesignstudy.infra.kafka.consumer
+package dev.fernandocarvalho.systemdesignstudy.infra.kafka
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder

@@ -3,6 +3,8 @@ package dev.fernandocarvalho.systemdesignstudy.order.springstarter.web
 import dev.fernandocarvalho.systemdesignstudy.order.business.OrderDispatcher
 import dev.fernandocarvalho.systemdesignstudy.order.business.OrderFinder
 import dev.fernandocarvalho.systemdesignstudy.order.contracts.Order
+import org.springframework.cache.annotation.CacheEvict
+import org.springframework.cache.annotation.Cacheable
 import org.springframework.http.ResponseEntity
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.GetMapping
@@ -16,6 +18,7 @@ class OrderController(
     private val orderFinder: OrderFinder
 ) {
 
+    @CacheEvict(value = ["orders"], allEntries = true)
     @PostMapping
     fun newOrder(): ResponseEntity<Void> {
         orderDispatcher.sendMessage()
