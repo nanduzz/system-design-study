@@ -8,3 +8,13 @@ spring:
       database: system-design-study
   redis:
     password: Redis2019!
+
+#Observability
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
