@@ -1,4 +1,4 @@
-package dev.fernandocarvalho.systemdesignstudy.infra.kafka.consumer
+package dev.fernandocarvalho.systemdesignstudy.infra.kafka
 
 import com.google.gson.*
 import dev.fernandocarvalho.systemdesignstudy.infra.kafka.model.CorrelationId

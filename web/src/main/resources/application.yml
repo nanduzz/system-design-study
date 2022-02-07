@@ -2,11 +2,15 @@ spring:
   kafka:
     consumer:
       auto-offset-reset: earliest
+  data:
+    mongodb:
+      uri: mongodb://root:example@127.0.0.1:27017/system-design-study?authSource=admin
+      database: system-design-study
+  redis:
+    password: Redis2019!
 
 #Observability
 management:
-  security:
-    enabled: false
   endpoints:
     web:
       exposure:
@@ -14,8 +18,3 @@ management:
   endpoint:
     health:
       show-details: always
-
-security:
-  basic:
-    enabled: false
-

@@ -54,9 +54,21 @@ services:
 #      - kafka
 #      - zookeeper
 
+  mongo:
+    image: mongo
+    #restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+  redis:
+    image: redis
+    command: redis-server --requirepass Redis2019!
+    ports:
+      - "6379:6379"
 volumes:
   zookeeper_data:
     driver: local
   kafka_data:
     driver: local
-
